@@ -123,6 +123,6 @@ async def on_ready():
     print(f'Logged in as {bot.user}!')
 
 # 環境変数からトークンを取得してボットを起動する
-TOKEN = 
+TOKEN = os.getenv('DISCORD_TOKEN')
 bot.run(TOKEN)
 
